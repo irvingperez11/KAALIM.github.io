@@ -628,6 +628,7 @@ function keydown(event)
 	case "1": gameState.camera = camera; break;
 	case "2": gameState.camera = blueAvatarCam; break; //designate the cameras
 	case "3": gameState.camera = redAvatarCam; break; //designate the cameras
+
     case "ArrowLeft": controls.leftred = true;  break;
     case "ArrowRight": controls.rightred = true;  break;
     case "ArrowUp": controls.fwdred = true;  break;
@@ -787,7 +788,7 @@ function animate()
 			break;
 
 		case "main":
-    gameState.camera = camera;
+    //gameState.camera = camera;
     updateAvatarB(blueAvatar);
     updateAvatarR(redAvatar);
     updateredNPC();
